@@ -44,7 +44,7 @@ Heuristik utama:
 
 Varian agresif dari BotBebas. Patrol mencakup 90% dimensi arena dengan tambahan zigzag sebelum gun sweep dimulai untuk memperluas coverage dan mempersulit prediksi posisi bot.
 
-**Modifikasi tambahan:** Bot melakukan scan dari sisi depan, kanan, kiri, dan belakang. Scanner mencakup wilayah ±120° di tiap sisinya.
+**Modifikasi tambahan:** Bot melakukan scan dari sisi depan, kanan, kiri, dan belakang. Scanner mencakup wilayah ±120° pada tiap sisi.
 
 Heuristik utama:
 - **Patrol:** 90% dimensi arena (vs 30% BotBebas), pindah ke tembok seberang `(currentWall + 2)`
