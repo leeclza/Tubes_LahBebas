@@ -82,6 +82,99 @@ Download dan install dari: https://dotnet.microsoft.com/download
 
 Verifikasi instalasi:
 ```bash
+java --version
+dotnet --version
+```
+
+---
+
+## Cara Build dan Menjalankan
+
+### 1. Clone repository
+```bash
+git clone https://github.com/leeclza/Tubes_LahBebas
+cd Tubes_LahBebas
+```
+
+### 2. Download game engine
+Download `robocode-tankroyale-gui-0.30.0.jar` dari:  
+https://github.com/Ariel-HS/tubes1-if2211-starter-pack/releases
+
+Taruh file `.jar` di root folder repository.
+
+### 3. Build bot
+
+> **Penting:** Pastikan path folder tidak mengandung spasi.  
+> Contoh path aman: `D:\TubesStima\Tubes_LahBebas`
+
+Build masing-masing bot:
+
+```bash
+# Bot Utama
+cd src/main-bot/LahBebas
+dotnet build
+
+# Bot Alternatif 1
+cd src/alternative-bots/BotBebas
+dotnet build
+
+# Bot Alternatif 2
+cd src/alternative-bots/BotGladiator
+dotnet build
+
+# Bot Alternatif 3
+cd src/alternative-bots/Imo
+dotnet build
+```
+
+Atau jalankan via script:
+
+**Windows:**
+```bash
+cd src/main-bot/LahBebas
+./LahBebas.cmd
+```
+
+**Linux/Mac:**
+```bash
+cd src/main-bot/LahBebas
+chmod +x LahBebas.sh
+./LahBebas.sh
+```
+
+### 4. Jalankan game engine
+```bash
+java -jar robocode-tankroyale-gui-0.30.0.jar
+```
+
+### 5. Setup bot di game engine
+1. Klik **Config → Bot Root Directories → Add**
+2. Pilih folder root repository
+3. Klik **OK**
+
+### 6. Mulai pertarungan
+1. Klik **Battle → Start Battle**
+2. Pilih bot di panel kiri atas → klik **Boot →**
+3. Tunggu bot muncul di **Joined Bots**
+4. Pilih bot → **Add →** → **Start Battle**
+
+---
+
+## Troubleshooting
+
+**Bot muncul lalu langsung hilang saat di-boot:**
+- Pastikan path folder tidak ada spasi
+- Sesuaikan `<TargetFramework>` di file `.csproj` dengan versi .NET kamu:
+```bash
+dotnet --version
+```
+Ganti `net6.0` di `.csproj` menjadi versi yang sesuai (contoh: `net10.0`), lalu hapus folder `bin` dan `obj` dan build ulang.
+
+**Build error:**
+- Pastikan versi BotApi di `.csproj` adalah `0.30.0`
+- Pastikan .NET SDK sudah terinstall dengan benar
+
+---
 
 ## Struktur Repository
 
