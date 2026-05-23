@@ -1,0 +1,9 @@
+{
+  "name": "LahBebas",
+  "version": "1.0",
+  "authors": ["Leon", "Galih", "Kenzie"],
+  "description": "Adaptive greedy bot dengan predictive targeting dan state machine",
+  "countryCodes": ["id"],
+  "platform": ".Net",
+  "programmingLang": "C#"
+}
