@@ -219,8 +219,8 @@ Tubes_LahBebas/
 | Nama | NIM | Kontribusi |
 |---|---|---|
 | Christoper Leon Saputra | 124140097 | LahBebas (bot utama), Imo (alt-bot-3) |
-| Galih Sigit Satrio | 124140001 | BotBebas (alt-bot-1) |
-| Kenzie Sahasika Tariana | 124140103 | BotGladiator (alt-bot-2) |
+| Galih Sigit Satrio | 124140001 | BotBebas (alt-bot-1), penulis laporan |
+| Kenzie Sahasika Tariana | 124140103 | BotGladiator (alt-bot-2), editor |
 
 **Kelompok 8 RC — IF25-21013 Strategi Algoritma**  
 Program Studi Teknik Informatika  
